@@ -3,10 +3,10 @@
   "private": true,
   "engines": { "node": ">=20 <21" },
   "scripts": {
-    "build": "node node_modules/@medusajs/cli/dist/index.js build",
-    "start": "node node_modules/@medusajs/cli/dist/index.js start",
-    "migrate": "node node_modules/@medusajs/cli/dist/index.js db:migrate",
-    "setup": "node node_modules/@medusajs/cli/dist/index.js db:setup"
+    "build": "medusa build",
+    "start": "medusa start",
+    "migrate": "medusa db:migrate",
+    "setup": "medusa db:setup"
   },
   "dependencies": {
     "@medusajs/framework": "2.10.1",
