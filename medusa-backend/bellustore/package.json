@@ -9,8 +9,8 @@
     "setup": "medusa db:setup"
   },
   "dependencies": {
-    "@medusajs/framework": "2.10.1",
-    "@medusajs/cli": "2.10.1",
+    "@medusajs/framework": "2.8.2",
+    "@medusajs/cli": "2.8.2",
     "pg": "^8.11.3"
   },
   "devDependencies": {}
