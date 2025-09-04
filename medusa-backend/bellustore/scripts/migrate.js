@@ -1,19 +1,12 @@
 #!/usr/bin/env node
+const { run } = require('@medusajs/cli');
 (async () => {
   try {
-    const cli = require('@medusajs/cli');
-    await cli.run(['db:migrate', '--execute-safe-links']);
-    process.exit(0);
+    await run(['db:migrate', '--execute-safe-links']);
+    console.log('✔ db:migrate completed');
   } catch (e) {
-    console.error(e);
-    // Fallback to setup once if migrate path fails (fresh DB)
-    try {
-      const cli = require('@medusajs/cli');
-      await cli.run(['db:setup']);
-      process.exit(0);
-    } catch (e2) {
-      console.error(e2);
-      process.exit(1);
-    }
+    console.warn('db:migrate failed, trying db:setup...', e?.message || e);
+    await run(['db:setup']);
+    console.log('✔ db:setup completed');
   }
 })();

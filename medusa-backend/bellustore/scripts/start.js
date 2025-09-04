@@ -1,10 +1,6 @@
 #!/usr/bin/env node
+const { run } = require('@medusajs/cli');
+const port = String(process.env.PORT || 8080);
 (async () => {
-  try {
-    const cli = require('@medusajs/cli');
-    await cli.run(['start', '-H', '0.0.0.0', '-p', String(process.env.PORT || 8080)]);
-  } catch (e) {
-    console.error(e);
-    process.exit(1);
-  }
+  await run(['start', '-H', '0.0.0.0', '-p', port]);
 })();
