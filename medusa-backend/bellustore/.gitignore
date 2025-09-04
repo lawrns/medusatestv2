@@ -1,0 +1,4 @@
+node_modules
+.medusa
+npm-debug.log
+.env

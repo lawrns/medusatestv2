@@ -1,0 +1,16 @@
+{
+  "name": "medusa-backend",
+  "private": true,
+  "engines": { "node": ">=20 <21" },
+  "scripts": {
+    "build": "medusa build",
+    "start": "medusa start",
+    "migrate": "medusa db:migrate",
+    "setup": "medusa db:setup"
+  },
+  "dependencies": {
+    "@medusajs/framework": "^2.10.0",
+    "@medusajs/cli": "^2.10.0",
+    "pg": "^8.11.3"
+  }
+}
