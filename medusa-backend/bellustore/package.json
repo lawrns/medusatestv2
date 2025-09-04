@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@medusajs/framework": "^2.10.0",
-    "@medusajs/cli": "^2.10.1",
+    "@medusajs/cli": "2.9.0",
     "pg": "^8.11.3"
   }
 }
