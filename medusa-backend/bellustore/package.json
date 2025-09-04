@@ -1,6 +1,5 @@
 {
   "name": "medusa-backend",
-  "type": "module",
   "private": true,
   "engines": { "node": ">=20 <21" },
   "scripts": {
@@ -11,10 +10,8 @@
   },
   "dependencies": {
     "@medusajs/framework": "2.10.1",
+    "@medusajs/cli": "2.10.1",
     "pg": "^8.11.3"
   },
-  "devDependencies": {
-    "@medusajs/cli": "2.10.1",
-    "typescript": "^5.4.0"
-  }
+  "devDependencies": {}
 }
