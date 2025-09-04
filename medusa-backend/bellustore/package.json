@@ -3,15 +3,12 @@
   "private": true,
   "engines": { "node": ">=20 <21" },
   "scripts": {
-    "build": "medusa build",
-    "start": "medusa start",
-    "migrate": "medusa db:migrate",
-    "setup": "medusa db:setup"
+    "start": "node scripts/start.js",
+    "migrate": "node scripts/migrate.js"
   },
   "dependencies": {
     "@medusajs/framework": "2.8.2",
     "@medusajs/cli": "2.8.2",
     "pg": "^8.11.3"
-  },
-  "devDependencies": {}
+  }
 }
