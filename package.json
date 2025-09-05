@@ -1,0 +1,20 @@
+{
+  "name": "bellustore-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "medusa build",
+    "start": "medusa start",
+    "migrate": "medusa db:migrate",
+    "setup": "medusa db:setup"
+  },
+  "dependencies": {
+    "@medusajs/framework": "^2.10.0",
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=20 <21"
+  }
+}
+
